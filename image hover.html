@@ -1,0 +1,59 @@
+<html>
+ <head>
+  <style type"text/css">
+.container-img{
+  position: relative;
+  width: 400px;
+}
+
+.image {
+  display: block;
+  width: 400px;
+  height:400px;
+  transition:4s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition:4s;
+  background-color: rgb(104, 202, 35) ;
+}
+.container-img:hover .overlay{
+  opacity:1;
+}
+.container-img:hover .image{
+  transform:rotate(360deg) ;
+}
+.text {
+  color: rgb(19, 18, 17);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-align:center;
+}
+</style>
+</head>
+</html>
+<body>
+
+<h2>image overlay effects</h2>
+<div class="container-img">
+  <img src="./96091161-wild-natural-forest-at-sunrise-the-sun-is-shining-through-the-trees.webp" alt="Forest" class="image">
+  <div class="overlay">
+    <div class="text">FOREST</div>
+</div>
+</div>
+</body>
+</html>
